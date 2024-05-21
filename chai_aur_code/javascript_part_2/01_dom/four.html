@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(17, 17, 17); color: white;">
+    <ul class="lan">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addLan(lanName){
+      const li =   document.createElement('li')
+      li.innerHTML = `${lanName}`
+      document.querySelector('.lan').appendChild(li)
+    }
+    addLan("python")
+
+    function addOptiLan(lanName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(lanName))
+        document.querySelector('.lan').appendChild(li)
+
+    }
+    addOptiLan('go lan')
+
+    //edit
+
+    const secondLan  = document.querySelector("li:nth-child(2)")
+    // secondLan.innerHTML = "mojo"
+    const newLi = document.createElement('li')
+    newLi.textContent = "mojo"
+    secondLan.replaceWith(newLi)   
+
+    //edit
+
+    const firstLan = document.querySelector("li:first-child")
+    firstLan.outerHTML ='<li>TypeScript</li>'
+
+    // remove
+    const lastLan = document.querySelector("li:last-child")
+    lastLan.remove();
+    
+
+</script>
+</html>

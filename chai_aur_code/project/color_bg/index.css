@@ -1,0 +1,30 @@
+.button{
+    padding: 10px;
+    margin: 10px;
+}
+div #grey{
+    background-color:grey;
+    padding: 30px ;
+    width: 30px;
+    border: 2px solid black;
+
+ }
+ div #blue{
+    background-color:blue;
+    padding: 30px ;
+    width: 30px; 
+    border: 2px solid black;
+ } 
+ div #white{
+    background-color:white;
+    padding: 30px ;
+    width: 30px; 
+    border: 2px solid black;
+ }
+  div #yellow{
+    background-color:yellow;
+    padding: 30px ;
+    width: 30px; 
+    border: 2px solid black;
+ }
+ 
